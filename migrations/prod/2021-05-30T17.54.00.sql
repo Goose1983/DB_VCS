@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS `vmware_tasks`;
+CREATE TABLE `vmware_requests` ( `requestID` int  NOT NULL auto_increment, `action` char(11) NOT NULL, `vmkey` char(10) NOT NULL DEFAULT '', `parameters` varchar(255) NOT NULL DEFAULT '', `status` char(11) NOT NULL DEFAULT '', PRIMARY KEY (`requestID`)) ENGINE = InnoDB DEFAULT CHARSET = utf8;
